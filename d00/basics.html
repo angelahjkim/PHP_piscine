@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basics</title>
+<style>
+
+body {
+	background-color: pink;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+	margin: 50px 0px 0px 0px;
+	text-align: center;
+	color: white
+}
+
+.shops {
+	display: block;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.store-image-text {
+	float: left;
+	margin: 50px 5px 20px 5px;
+	text-align: center;
+}
+
+.shops:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.copyright {
+	font-style: italic;
+	text-align: right;
+	font-size: 12px;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+</style>
+</head>
+<body>
+	<h1>Let's go to the Mall!</h1>
+	<div class="shops">
+		<div class="store-image-text">
+			<img src="https://i.pinimg.com/originals/90/47/17/904717a1215e66cd8cfb7949b06794c7.jpg" alt="madewell website" height=333px>
+			<p><a href="https://www.madewell.com">Shop at Madewell</a></p>
+		</div>
+		<div class="store-image-text">
+			<img src="https://www.sandiegomagazine.com/images/2014/march/shop/aloha-sunday-supply-leucadia.jpg" alt="aloha sunday website" height=333px>
+			<p><a href="https://www.alohasunday.com">Shop at Aloha Sunday</a></p>
+		</div>
+	</div>
+	<footer class="copyright">
+		<hr>
+		<p>&copy angkim 2019</p>
+	</footer>
+</body>
+</html>
