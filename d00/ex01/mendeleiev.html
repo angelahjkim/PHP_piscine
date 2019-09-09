@@ -12,45 +12,50 @@
 
 body {
 	font-family: 'Space Mono', 'Courier New', Courier, monospace;
-	/* background-image: url('https://cdn.mos.cms.futurecdn.net/1114a6f83369c55308cdc5e46f8e8ca8.jpg'); */
-	background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/VOENE67sxikxs86k8/slow-pan-shot-to-earth-from-space-clip-contains-earth-space-florida-bahamas-caribbean-cuba-sun-planet-atmosphere-ocean-images-from-nasa_roeagqdol__F0006.png');
+	background-image: url('https://wallpapersite.com/images/pages/pic_h/6408.jpg');
 	background-size: cover;
-	opacity: 0.6;
+	background-position: center;
+	opacity: 0.7;
+}
+
+div.container {
+	width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 #title {
 	font-family: 'Gravitas One', monospace;
-	font-size: 60px;
-	text-align: center;
+	font-size: 3vw;
 	color: white;
-	margin: 25px;
-}
-
-table {
-	width: 100%;
 }
 
 p {
-	padding: 0px 5px;
+	padding: 0px 0.3vw;
 }
 
-.mass {
+.periodic-table {
+	margin: 0 auto;
+}
+
+p.mass {
 	text-align: right;
-	font-size: 1.5vh;
-	margin: 0px;
+	font-size: 0.8vw;
+	margin: 0;
 }
 
-.element {
+p.element {
 	font-family: 'Bio Rhyme', Courier, monospace;
 	text-align: center;
 	font-style: bold;
-	font-size: 3.5vh;
-	margin: 8px;
+	font-size: 2vw;
+	margin: 0.8vh;
 }
 
-.number {
+p.number {
 	text-align: left;
-	font-size: 1.5vh;
+	font-size: 0.8vw;
 	margin: 0px;
 }
 
@@ -100,9 +105,9 @@ td.unknown {
 
 </style>
 <body>
-	<div class="periodic-table">
+	<div class="container">
 		<p id="title">Periodic Table</p>
-		<table contenteditable="true">
+		<table class="periodic-table" contenteditable="true">
 <!-- ROW 1 -->
 		<tr>
 			<td class="reactive-nonmetal">
