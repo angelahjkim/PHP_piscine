@@ -1,0 +1,114 @@
+body {
+	background-color: rgb(80, 80, 80);
+}
+
+p {
+    text-align: left;
+    padding: 20px 10px;
+    font-size: 
+}
+
+.container {
+    
+}
+
+.box {
+	background-color: rgb(144, 144, 144);
+	border-radius: 15px;
+    box-shadow: 10px 10px 5px black;
+    float: left;
+    width: 30%;
+    padding: 50px;
+}
+
+#header {
+    position: absolute;
+    height: 137px;
+    width: 1420px;
+    margin: 15px 200px;
+}
+
+#logo {
+    position: relative;
+    /* height: 147px; */
+    height: 125px;
+    float: left;
+    margin: 10px;
+}
+
+#magnifying-glass {
+    position: relative;
+    float: right;
+}
+
+#nav-icon-reload {
+    position: relative;
+    float: right;
+	width: 20px;
+}
+
+#nav-icon-close {
+    /* position: absolute; */
+    float: right;
+	width: 20px;
+}
+
+/* Left Navigation Menu */
+
+#left-nav-menu {
+    /* position: absolute;
+    float: left; */
+    /* margin: 200px; */
+    height: 500px;
+    width: 150px;
+}
+
+#left-icon {
+	width: 77px;
+}
+
+#left-icon-eye {
+	width: 77px;
+}
+
+/* Center Column */
+
+#center {
+    /* position: absolute;
+    float: left; */
+}
+
+#lab {
+
+}
+
+/* Right Navigation Menu */
+
+#right-nav-menu {
+    /* position: absolute;
+    float: left; */
+    height: 500px;
+    width: 150px; 
+}
+
+#right-icon {
+    width: 77px;
+}
+
+#right-icon-brick {
+    width: 77px;
+}
+
+/* Response Box */
+
+#response-box {
+    background-color: rgb(166, 251, 150);
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px black;
+    width: 550px;
+    height: 150px;
+}
+
+#large-word {
+    font-size: 20px;
+}
