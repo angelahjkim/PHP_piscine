@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme|Bungee|Bungee+Shade|Gravitas+One|Space+Mono&display=swap');
+
+body {
+	font-family: 'Space Mono', 'Courier New', Courier, monospace;
+	background-image: url('https://wallpapersite.com/images/pages/pic_h/6408.jpg');
+	background-size: cover;
+	background-position: center;
+	opacity: 0.7;
+}
+
+div.container {
+	width: 100vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#title {
+	font-family: 'Gravitas One', monospace;
+	font-size: 3vw;
+	color: white;
+}
+
+p {
+	padding: 0px .3vw;
+}
+
+.periodic-table {
+	margin: 0 auto;
+}
+
+p.mass {
+	text-align: right;
+	font-size: 0.8vw;
+	margin: 0;
+}
+
+p.element {
+	font-family: 'Bio Rhyme', Courier, monospace;
+	text-align: center;
+	font-style: bold;
+	font-size: 2vw;
+	margin: 0.8vh;
+}
+
+p.number {
+	text-align: left;
+	font-size: 0.8vw;
+	margin: 0px;
+}
+
+td.empty {
+	background-color: transparent; 
+}
+
+td.noble-gas {
+	background-color: #F7DC6F
+}
+
+td.alkali-metal {
+	background-color: #EC407A
+}
+
+td.alkaline-metal {
+	background-color: #A569BD
+}
+
+td.metalloid {
+	background-color: #52BE80
+}
+
+td.reactive-nonmetal {
+	background-color: #EB984E
+}
+
+td.post-transition-metal {
+	background-color: #B0BEC5
+}
+
+td.transition-metal {
+	background-color: #3498DB
+}
+
+td.lanthanide {
+	background-color: #F8BBD0
+}
+
+td.actinide {
+	background-color: #F06292
+}
+
+td.unknown {
+	background-color: #808B96
+}
