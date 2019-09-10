@@ -2,58 +2,57 @@ body {
 	background-color: rgb(80, 80, 80);
 }
 
-div.container {
-	/* position: relative; */
-	text-align: center;
-}
-
 .box {
 	background-color: rgb(144, 144, 144);
 	border-radius: 10px;
     box-shadow: 7px 7px 6px black;
-	float: left;
-	margin: 10px;
+	margin: 10px 10px;
+	text-align: center;
 }
 
 #header {
-	display: block;
 	position: absolute;
-	width: 75vw;
-	height: 14vh;
-	margin-top: 1vh;
-	margin-left: 20vh;
-	margin-right: 20vh;
-	margin-bottom: 1.5vh;
+	width: 78%;
+	height: 100px;
+	margin: 10px 11% 10px 11%;
 }
 
 #logo {
-    position: relative;
-	height: 11vh;
-	margin-left: 1vw;
-	margin-top: 1vh;
+	width: 50%;
+	margin-left: 5px;
+	margin-top: 8px;
+}
+
+#day-of-42 {
+	height: 80px;
 	float: left;
-	clear: left;
 }
 
 #magnifying-glass {
-    position: relative;
-	float: right;
-	clear: none;
-	height: 14.5vh;
-	margin-top: 1.4vh;
+	position: absolute;
+	height: 100px;
+	margin-left: 150px;
+	margin-top: 3px;
 }
 
-#nav-icon-reload {
-    position: relative;
+.close {
 	float: right;
-	width: 2vh;
+	clear: left;
+	margin-top: -8px;
 }
 
-#nav-icon-close {
-    position: relative;
+.reload {
 	float: right;
-	margin-top: 12vh;
-	width: 2vh;
+}
+
+#icon-close {
+	width: 15px;
+	margin-right: 5px;
+}
+
+#icon-reload {
+	width: 15px;
+	margin-right: 5px;
 }
 
 #header:after {
@@ -62,7 +61,7 @@ div.container {
 	clear: both;
 }
 
-div.columns {
+.columns {
 	display: block;
 	width: 80vw;
 	/* margin-left: auto;
@@ -90,7 +89,8 @@ div.columns {
 #left-icon {
 	/* width: 60px; */
 	width: 3.8vw;
-	margin-top: 0.5vh;
+	margin-top: -1vh;
+	margin-bottom: -1.5vh;
 }
 
 #left-icon-eye {
@@ -137,13 +137,13 @@ div.columns {
 
 #right-icon {
 	width: 3.7vw;
-	margin-top: 1.5vh;
-	margin-bottom: -1vh;
+	margin-top: -1vh;
+	margin-bottom: -2vh;
 }
 
 #right-icon-brick {
-	width: 77px;
-	margin-top: 1.5vh;
+	width: 2vw;
+	/* margin-top: 1.5vh; */
 }
 
 div.columns:after {
@@ -159,22 +159,23 @@ div.columns:after {
     background-color: rgb(140, 253, 142);
     border-radius: 10px;
     box-shadow: 7px 7px 6px black;
-	width: 20vw;
-	height: 16vh;
-	/* padding-top: -8.5vh;
-	padding-left: 8vw; */
+	width: 28vw;
+	height: 15vh;
+	/* padding-top: -8.5vh; */
+	/* padding-left: 8vw;  */
 	margin-top: -10vh;
 	margin-left: 8vw;
 }
 
-#response-text {
-    text-align: left;
-    padding: 0px 0px;
-	font-size: 14px;
-}
-
 #response {
 	float: left;
+}
+
+#response-text {
+	text-align: left;
+	padding: 0px 0px;
+	font-family: Helvetica, sans-serif;
+	font-size: 13px;
 }
 
 #input-field {
