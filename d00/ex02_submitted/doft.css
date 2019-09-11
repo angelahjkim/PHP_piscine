@@ -1,0 +1,166 @@
+body {
+	background-color: rgb(80, 80, 80);
+}
+
+.box {
+	background-color: rgb(144, 144, 144);
+	border-radius: 10px;
+    box-shadow: 12px 12px 10px black;
+	text-align: center;
+}
+
+.header {
+	position: relative;
+    width: 75%;
+    height: 175px;
+	margin: 10px 12.5% 10px 12.5%;
+}
+
+#logo {
+	width: 50%;
+	margin-left: 5px;
+}
+
+#day-of-42 {
+	width: 60%;
+	margin-top: 15px;
+    float: left;
+}
+
+#magnifying-glass {
+    position: absolute;
+    width: 17%;
+    margin-top: 16px;
+    margin-left: 10vw;
+}
+
+#icon-reload {
+	float: right;
+	width: 28px;
+	margin: 10px 10px 0px 0px;
+}
+
+#icon-close {
+	float: right;
+	clear: left;
+	width: 28px;
+	margin: -20px 15px 0px 20px;
+}
+
+.header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.columns {
+	margin: 2vh 11% 0px 11%;
+}
+
+#left-nav-menu {
+	float: left;
+	width: 7vw;
+	height: 49vh;
+	margin-left: 3vw;
+}
+
+#left-icon {
+	width: 3.8vw;
+	margin-top: .5vh;
+	margin-bottom: -2vh;
+}
+
+#left-icon-eye {
+	width: 3.9vw;
+	margin-top: 1vh;
+	border: 7px solid red;
+	border-radius: 5px;
+}
+
+#center {
+	float: left;
+	clear: none;
+	width: 53vw;
+	height: 61vh;
+	text-align: center;
+	position: relative;
+	margin-left: 1.5vw;
+	z-index: -1;
+}
+
+#lab {
+	position: absoluate;
+	width: 51vw;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	margin-top: 1.3vh;
+}
+
+#right-nav-menu {
+	float: left;
+	clear: right;
+	width: 7vw;
+	height: 40vh;
+	margin-left: 1.3vw;
+}
+
+#right-icon {
+	width: 3.7vw;
+	margin-top: 1vh;
+	margin-bottom: -2vh;
+}
+
+#right-icon-brick {
+	width: 40px;
+	margin-top: 1vh;
+	margin-right: -4.4px;
+}
+
+#right-icon-brick2 {
+	width: 40px;
+	margin-top: -4px;
+	margin-left: -3.8px;
+}
+
+.columns:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#response-box {
+    position: absolute;
+    background-color: rgb(140, 253, 142);
+    border-radius: 5px;
+    box-shadow: 12px 12px 10px black;
+	width: 25%;
+	height: 15%;
+    margin-left: 10vw;
+    margin-top: -5vh;
+}
+
+#response-text {
+	text-align: left;
+	padding: 0px 1%;
+	font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 2%;
+}
+
+#large-word {
+    font-size: 40px;
+    font-family: 'Times', serif;
+}
+
+#red-shadow{
+	text-shadow: 5px 5px 3.5px red;
+}
+
+#response {
+    margin-top: -2.5%;
+}
+
+#input-field {
+    width: 60%;
+    margin-left: 2%;
+}

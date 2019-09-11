@@ -1,0 +1,44 @@
+body {
+	background-color: #505050
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 25% auto 25%;
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+.box {
+	background-color: rgb(144, 144, 144);
+	border-radius: 10px;
+    box-shadow: 7px 7px 6px black;
+}
+
+#top {
+	grid-column: 2/6;
+	height: 175px;
+	margin-top: 15px;
+}
+
+.logo {
+	grid-column: 2/4;
+}
+
+#logo {
+	width: 35%;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.glass {
+	grid-column: 5/6;
+	background-color: red;
+}
+
+#glass {
+	grid-column: 5/6;
+	width: 20%;
+}
+
