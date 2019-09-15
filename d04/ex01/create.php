@@ -1,22 +1,28 @@
 <?php
-	if ($_POST && $_POST['login'] && $_POST['passwd']) {
-		$dir_path = '../private/passwd.txt';
-		$account_arr = array();
-		$new_arr = array();
+	if ($_POST && $_POST['submit'] == 'OK' && $_POST['login'] != "" && $_POST['passwd'] != "") {
+		$accounts = array();
 		$new_arr['login'] = $_POST['login'];
 		$new_arr['passwd'] = hash('sha256', $_POST['passwd']);
-print_r($new_arr);
-		if (file_exists($dir_path)) {
-echo "NOT first time\n";
-			$file_content = unserialize(file_get_contents($dir_path));
-			array_push($file_content, $new_arr);
-			file_put_contents($dir_path, serialize($file_content));
-			echo "OK\n";
+
+		if (file_exists("../private/passwd")) {
+			$file_content = unserialize(file_get_contents("../private/passwd"));
+			$user_exists = 0;
+			foreach ($file_content as $user) {
+				if ($user['login'] == $_POST['login']) {
+					$user_exists = 1;
+					echo "ERROR\n";
+				}
+			}
+			if ($user_exists != 1) {
+				array_push($file_content, $new_arr);
+				file_put_contents("../private/passwd", serialize($file_content));
+				echo "OK\n";
+			}
 		}
 		else {
-echo "first time\n";
-			mkdir($dir_path, 0777);
-			file_put_contents($dir_path, serialize($new_arr));
+			mkdir("../private", 0750);
+			array_push($accounts, $new_arr);
+			file_put_contents("../private/passwd", serialize($accounts));
 			echo "OK\n";
 		}
 	}
