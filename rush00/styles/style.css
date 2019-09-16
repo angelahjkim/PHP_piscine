@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap');
+
+body {
+	background-color: #BB8FCE;
+	font-family: 'Karla', sans-serif;
+	font-size: 20px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: 15vh 100px 75vh 5vh;
+	grid-template-areas:	'title title . login login'
+							'. . . . cart'
+							'. categories categories categories .'
+							'. . . copyright copyright';
+}
+
+.title {
+	grid-area: title;
+	/* background-color: purple; */
+}
+
+#store-name {
+	font-size: 70px;
+	font-style: bold;
+	margin-left: 2vw;
+}
+
+.login {
+	grid-area: login;
+	/* background-color: red; */
+}
+
+#login-text {
+	font-size: 2vw;
+}
+
+.cart {
+	grid-area: cart;
+	/* background-color: yellow; */
+}
+
+.categories {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: "cat-1 cat-2 cat-3";
+	alignt-content: center;
+	grid-area: categories;
+	background-color: red;
+
+}
+
+.cat-box {
+	display: flex;
+	flex-direction: column;
+	border: 5px solid green;
+	text-align: center;
+	align-items: center;
+	width: 500px;
+}
+
+#cat-1 {
+	background-color: white;
+	grid-area: cat-1;
+}
+
+#cat-img {
+	width: 300px;
+}
+
+#cat-2 {
+	background-color: blue;
+	grid-area: cat-2;
+}
+
+#cat-3 {
+	background-color: white;
+	grid-area: cat-3;
+}
+
+
+
+.copyright {
+	grid-area: copyright;
+	/* background-color: grey; */
+}

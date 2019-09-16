@@ -1,0 +1,10 @@
+.categories-container {
+	background-color: green;
+	display: flex;
+	flex-flow: row;
+	height: 500px;
+ }
+
+.item-image {
+		height: 100px;
+}
