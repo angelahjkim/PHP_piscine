@@ -1,4 +1,3 @@
-use db_angkim;
 CREATE TABLE ft_table (
     id INT NOT NULL AUTO_INCREMENT,
     login VARCHAR(11) NOT NULL DEFAULT 'toto',

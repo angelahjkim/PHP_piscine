@@ -1,4 +1,3 @@
-SELECT COUNT(`date`) AS 'movies'
+SELECT COUNT(id_film) AS 'movies'
 FROM member_history
-WHERE (DATE(`date`) LIKE '%-12-24%')
-OR (DATE(`date`) LIKE '2006-12-24' OR DATE(`date`) LIKE '2007-12-24');
+WHERE date > DATE('2006-10-30') AND date < DATE('2007-07-27') OR MONTH(date) = 12 AND DAY(date) = 24;

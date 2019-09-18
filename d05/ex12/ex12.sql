@@ -1,6 +1,4 @@
-SELECT user_card.last_name, user_card.first_name
+SELECT last_name, first_name
 FROM user_card
-INNER JOIN `member` ON `member`.id_user_card=user_card.id_user
-WHERE (user_card.last_name LIKE '%-%' AND user_card.first_name LIKE '%-%')
-OR (user_card.last_name LIKE '%-%') OR (user_card.first_name LIKE '%-%')
-ORDER BY user_card.last_name ASC, user_card.first_name ASC;
+WHERE first_name LIKE '%-%' OR last_name LIKE '%-%'
+ORDER BY last_name ASC, first_name ASC;

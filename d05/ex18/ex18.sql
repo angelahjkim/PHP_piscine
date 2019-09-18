@@ -1,4 +1,4 @@
-SELECT id_distrib, name
+SELECT name
 FROM distrib
 WHERE (id_distrib = 42
     OR id_distrib BETWEEN 62 AND 69 
