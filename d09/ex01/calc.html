@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+<title>Calculator</title>
+<style>
+	body {
+		font-family: Courier 'Courier New', Courier, monospace
+	}
+</style>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<table>
+		<td>
+			<input id="value1" type="text" name="first value" />
+		<td>
+			<select id="operator">
+				<option value="add">+</option>
+				<option value="subtract">-</option>
+				<option value="multiply">*</option>
+				<option value="divide">/</option>
+				<option value="modulo">%</option>
+			</select>
+		<td>
+			<input id="value2" type="text" name="second value" />
+		</td>
+		</tr>
+	</table>
+	<input type="submit" id="sub_btn" value="Try me" onclick="calculate();" />
+</body>
+<script>
+	function calculate() {
+		var value1 = parseInt(validate(document.getElementById("value1".value.trim())));
+		var value2 = parseInt(validate(document.getElementById("value2".value.trim())));	
+		var op = document.getElementById("operator").value;
+		var result = calculate(value1, value2, op);
+		alert(result);
+	}
+
+	function operate(value1, value2, op) {
+		if (op == "add")
+			return value1 + value2;
+		else if (op == "subtract")
+			return value1 - value2;
+		else if (op == "multiply")
+			return value1 * value2;
+		else if (op == "divide")
+			return value1 * value2;
+		else if (op == "modulo")
+			return value1 % value2;
+	}
+
+	var btn = document.getElementById("sub_btn")
+	sub_btn.addEventListener("click", () => {
+		alert(result);
+	}
+	});
+</script>
+</html>
