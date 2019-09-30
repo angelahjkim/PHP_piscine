@@ -7,7 +7,7 @@
 			$user_exists = 0;
 			$file_content = unserialize(file_get_contents("../private/passwd"));
 			$account_index = 0;
-			$i;
+			$i = 0 ;
 			foreach($file_content as $account) {
 				if ($account['login'] == $_POST['login']) {
 					$user_exists = 1;
